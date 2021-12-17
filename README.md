@@ -1,0 +1,1 @@
+# MacDCrossover-EMA-ATR
