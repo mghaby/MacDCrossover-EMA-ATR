@@ -4,7 +4,13 @@
 //+------------------------------------------------------------------+
 #include <Trade\Trade.mqh>
 
+
+input float InpRiskFloat = 0.02;
+input int InpMaxPositionsOpen = 3;
+input int RiskRewardMultiplyer = 2;
+
 CTrade trade;
+
 
 void OnTick()
   {
@@ -115,7 +121,7 @@ double setPositionSizeBuy(double accSize, double lp, double lCandle, double atLi
   {
    double x = lCandle - atLizzie;
    double y = (lp - x)* pow(10,SymbolInfoInteger(_Symbol,SYMBOL_DIGITS)) / 10;
-   double z = (((accSize * 0.02) / (y))) / 10; // divided by 10 for mini lot 
+   double z = (((accSize * InpRiskFloat) / (y))) / 10; // divided by 10 for mini lot 
    double abc = NormalizeDouble(z, 2);
 
    if (abc > max ){
@@ -131,7 +137,7 @@ double setPositionSizeSell(double accSize, double lp, double hCandle, double atL
   {
    double x = hCandle + atLizzie;
    double y = (x - lp) * pow(10,SymbolInfoInteger(_Symbol,SYMBOL_DIGITS)) / 10;
-   double z = (((accSize * 0.02) / (y))) / 10; // divided by 10 for mini lot 
+   double z = (((accSize * InpRiskFloat) / (y))) / 10; // divided by 10 for mini lot 
    double abc = NormalizeDouble(z, 2);
    
    if (abc > max ){
@@ -151,13 +157,13 @@ double setPositionSizeSell(double accSize, double lp, double hCandle, double atL
 double setTakeProfitBuy(double lCandle, double atLizzie, double lp)
   {
    double x = lp - (lCandle - atLizzie);
-   return lp + (x * 2);
+   return lp + (x * RiskRewardMultiplyer);
   }
 
 double setTakeProfitSell(double hCandle, double atLizzie, double lp)
   {
    double x = (hCandle + atLizzie) - lp;
-   return lp - (x * 2);
+   return lp - (x * RiskRewardMultiplyer);
   }
   
 //+------------------------------------------------------------------+
@@ -204,7 +210,7 @@ bool tradeCheck()
      }
 
 // Core Logic
-   if(PositionsTotal() < 3 && check)
+   if(PositionsTotal() < InpMaxPositionsOpen && check)
      {
       return true;
      }
