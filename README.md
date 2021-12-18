@@ -3,6 +3,7 @@
 This is the source code and the compiled `.ex5` file for the MacD Crossover EMA ATR EA. This EA was made under the request of a client and thus is suited to their needs.
 
 **DISCLAIMER THIS EA IS ONLY PROFITABLE ON CERTAIN CURRENCY PAIRS. PLEASE BACKTEST OR MAKE CHANGES IF YOU WISH TO USE THIS**
+
 **I AM NOT LIABLE FOR ANY PROFIT OR LOSS YOU MAY INCUR USING THIS EA**
 
 ## Description
