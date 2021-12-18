@@ -24,7 +24,6 @@ Exponential Moving Average for signal line definition. While there is a buy cros
 * This EA can be cloned using:
 ```
 git clone https://github.com/mghaby/MacDCrossover-EMA-ATR.git
-
 ```
 * The source code can also be copied and pasted directly into a template file in the MetaTrader 5 IDE and compiled to avoid glitches in the MetaTrader 5 software
 
