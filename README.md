@@ -10,15 +10,14 @@ This is the source code and the compiled `.ex5` file for the MacD Crossover EMA 
 
 This EA is made for the MacD Crossover + 200 EMA + ATR Value trading strategy for a client. The entry conditions follow the standard MacD cross signals however 
 due to the platform this was based off of the MetaTrader 5 MacD which uses a Simple Moving Average to calculate the signal line compared to the conventional 
-Exponential Moving Average for signal line definition. While there is a buy cross and price is above the EMA the Stop Loss is set to the swing low plus the current ATR value and a buy market order is executed. Vice-versa for a sell signal. This system is profitable on select time frames and currency pairs, so contributions are
-welcome! 
+Exponential Moving Average for signal line definition. While there is a buy cross and price is above the EMA the Stop Loss is set to the swing low plus the current ATR value and a buy market order is executed.The Take-Profit point is set at a 2:1. Vice-versa for a sell signal. This system is profitable on select time frames and currency pairs, so contributions are welcome! 
 
 ## Getting Started
 
 ### Dependencies
 
-* Describe any prerequisites, libraries, OS version, etc., needed before installing program.
-* ex. Windows 10
+* MetaTrader 5
+* A Live or Demo Account with an MetaTrader 5 Supported Broker
 
 ### Installing
 
@@ -42,28 +41,17 @@ command to run if program contains helper info
 
 ## Authors
 
-Contributors names and contact info
-
-ex. Dominique Pizzie  
-ex. [@DomPizzie](https://twitter.com/dompizzie)
+1. [@mghaby](https://github.com/mghaby)
 
 ## Version History
 
-* 0.2
-    * Various bug fixes and optimizations
-    * See [commit change]() or See [release history]()
 * 0.1
     * Initial Release
 
 ## License
 
-This project is licensed under the [NAME HERE] License - see the LICENSE.md file for details
+This project is licensed under the GNU GENERAL PUBLIC LICENSE - see the LICENSE file for details
 
 ## Acknowledgments
 
-Inspiration, code snippets, etc.
-* [awesome-readme](https://github.com/matiassingers/awesome-readme)
-* [PurpleBooth](https://gist.github.com/PurpleBooth/109311bb0361f32d87a2)
-* [dbader](https://github.com/dbader/readme-template)
-* [zenorocha](https://gist.github.com/zenorocha/4526327)
-* [fvcproductions](https://gist.github.com/fvcproductions/1bfc2d4aecb01a834b46)
+* [README-Template](https://gist.github.com/DomPizzie/7a5ff55ffa9081f2de27c315f5018afc)
