@@ -21,27 +21,29 @@ Exponential Moving Average for signal line definition. While there is a buy cros
 
 ### Installing
 
-* How/where to download your program
-* Any modifications needed to be made to files/folders
+* This EA can be cloned using:
+```
+git clone https://github.com/mghaby/MacDCrossover-EMA-ATR.git
+
+```
+* The source code can also be copied and pasted directly into a template file in the MetaTrader 5 IDE and compiled to avoid glitches in the MetaTrader 5 software
 
 ### Executing program
 
-* How to run the program
-* Step-by-step bullets
-```
-code blocks for commands
-```
+1. Once cloned place the source code file and the compiled `.ex5` into the `/Experts` directory in your MetaTrader 5 installation
+2. In the main MetaTrader 5 panel once logged in with a broker you can access the strategy tester in which you can follow the prompts to test this EA
 
 ## Help
 
-Any advise for common problems or issues.
 ```
-command to run if program contains helper info
+Inside the MetaTrader 5 IDE, you can highlight anything and press `F2` for more details
 ```
 
 ## Authors
 
-1. [@mghaby](https://github.com/mghaby)
+1. Mark Ghaby
+  * [Github](https://github.com/mghaby)
+  * [LinkedIn](https://www.linkedin.com/in/mghaby/)
 
 ## Version History
 
@@ -50,7 +52,7 @@ command to run if program contains helper info
 
 ## License
 
-This project is licensed under the GNU GENERAL PUBLIC LICENSE - see the LICENSE file for details
+This project is licensed under the GNU General Public License - see the LICENSE file for details
 
 ## Acknowledgments
 
