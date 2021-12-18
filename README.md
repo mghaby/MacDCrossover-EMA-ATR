@@ -2,13 +2,16 @@
 
 This is the source code and the compiled `.ex5` file for the MacD Crossover EMA ATR EA. This EA was made under the request of a client and thus is suited to their needs.
 
-**DISCLAIMER THIS EA IS ONLY PROFITABLE ON CERTAIN CURRENCY PAIRS. PLEASE BACKTEST OR MAKE CHANGES IF YOU WISH TO USE THIS**
+**DISCLAIMER THIS EA IS ONLY PROFITABLE ON CERTAIN CURRENCY PAIRS. PLEASE BACK-TEST OR MAKE CHANGES IF YOU WISH TO USE THIS**
 
 **I AM NOT LIABLE FOR ANY PROFIT OR LOSS YOU MAY INCUR USING THIS EA**
 
 ## Description
 
-An in-depth paragraph about your project and overview of use.
+This EA is made for the MacD Crossover + 200 EMA + ATR Value trading strategy for a client. The entry conditions follow the standard MacD cross signals however 
+due to the platform this was based off of the MetaTrader 5 MacD which uses a Simple Moving Average to calculate the signal line compared to the conventional 
+Exponential Moving Average for signal line definition. While there is a buy cross and price is above the EMA the Stop Loss is set to the swing low plus the current ATR value and a buy market order is executed. Vice-versa for a sell signal. This system is profitable on select time frames and currency pairs, so contributions are
+welcome! 
 
 ## Getting Started
 
