@@ -6,6 +6,8 @@ This is the source code and the compiled `.ex5` file for the MacD Crossover EMA 
 
 **I AM NOT LIABLE FOR ANY PROFIT OR LOSS YOU MAY INCUR USING THIS EA**
 
+**There are other versions however the src code is unavailable as per client request**
+
 ## Description
 
 This EA is made for the MacD Crossover + 200 EMA + ATR Value trading strategy for a client. The entry conditions follow the standard MacD cross signals however 
